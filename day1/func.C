@@ -14,7 +14,7 @@ int getnum(){
 
 
 int main(){
-	std::cout << "Enter two number: \n";
+	std::cout << "Enter two numbers: \n";
 	int sum;
 	int x = getnum();
 	int y = getnum();
@@ -26,6 +26,6 @@ int main(){
 		std::cout << "Sum: " << sum << std::endl;
 		counter++;
 	}
-	}
+}
 
 
