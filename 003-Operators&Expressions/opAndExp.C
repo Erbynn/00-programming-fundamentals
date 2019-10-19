@@ -9,4 +9,8 @@ int main(){
 	cout << "2 squared: " << result << endl;
 
 	//pre-increment
+	int i{6};
+	cout << "i: " << i << endl;
+	++i, ++i;
+	cout << "i+2: " << (++i, ++i) << endl;
 }
