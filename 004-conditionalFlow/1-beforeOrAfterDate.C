@@ -21,10 +21,10 @@ int main(){
 	curDate.day = 18;
 
 	if(usrDate.year > curDate.year){
-		cout << "Date is after today's " << endl;
+		cout << "Date is after today's" << endl;
 	}
 	else if(usrDate.year < curDate.year){
-                cout << "Date is before today's " << endl;
+                cout << "Date is before today's" << endl;
        	}
         else {
         	if(usrDate.month > curDate.month){
