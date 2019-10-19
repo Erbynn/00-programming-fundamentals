@@ -31,4 +31,13 @@ int main(){
 	int p2{6};
 	float f2 = static_cast<float>(p2); // not working
 	cout << p2 << " " << f2 << endl;
+
+	float foo {3.4f};
+        double a = double {foo}; // fxnal casting works on promotion, not demotion
+	cout << "casted: " << a << endl;
+        
+	//int aa = 5;
+        //float bb = float {a}; // fxnal cast failed on demotion or narrowing
+        //cout << aa << endl;
+
 }

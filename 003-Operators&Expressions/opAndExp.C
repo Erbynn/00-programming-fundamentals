@@ -27,4 +27,15 @@ int main(){
 	cout << "sum: " << sum << " sigma: " << sigma << " total: " << total << endl;
 	
 
+	// type casting
+	float fnum{5.3f};
+	cout << "fnum: " << fnum << endl;
+
+	//int *inumptr;
+	//inumptr = dynamic_cast<int*>(&fnum);	//not workiing
+	//cout << "ptr: " << *inumptr << endl;
+
+	auto inum = (int) fnum;
+	cout << "inum: " << inum << endl;
+
 }
