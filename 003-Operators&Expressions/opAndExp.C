@@ -16,7 +16,15 @@ int main(){
 	cout << "i+2: " << (++i, ++i) << endl;
 
 
-	// assignment operator
-	int num{4}; num *= 6, cout <<"num: " << num << endl; // comma operator usage(ie, doesnt one thing one at a time 
+	// *= assignment operator
+	int num{4}; 
+	num *= 6, cout <<"num: " << num << endl; // comma operator usage(ie, doesnt one thing one at a time 
  
+	
+	// right associative of assignment operator
+	int sum, sigma;
+	int total = sum = sigma = 3;	// better way of doing int i=3, int j=3, int k=3;
+	cout << "sum: " << sum << " sigma: " << sigma << " total: " << total << endl;
+	
+
 }
