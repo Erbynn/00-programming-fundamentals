@@ -131,5 +131,15 @@ void prettyPrint(Date userDate){
 }
 
 
+int main(){
+	Date userDate{};
+	
+	userDate = getDate();
+	
+	compareDate(userDate);
+	leap(userDate);
+	prettyPrint(userDate);	
+	
+}
 
 
