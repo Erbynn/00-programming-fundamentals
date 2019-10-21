@@ -16,8 +16,8 @@ Date getDate(){
 }
 
 
-void compareDate(){
-	Date usrDate = getDate();
+void compareDate(Date userDate){
+	Date usrDate = userDate;
 
 	Date curDate;
         curDate.year = 2019;
@@ -52,9 +52,10 @@ void compareDate(){
         }
 }		
 
-void leap(){
-	Date uDate = getDate();
+void leap(Date userDate){
+	//Date uDate = getDate();
 
+	Date uDate = userDate;
         if(uDate.year % 4 == 0){
                 if(uDate.year % 100 == 0){
                         if(uDate.year % 4 == 0){
@@ -73,9 +74,12 @@ void leap(){
         }
 }
 
-void prettyPrint(){
-  string postfx;          // cannot be declared after the setup
-        switch(usrDate.day){
+
+void prettyPrint(Date userDate){
+	Date ud = userDate;
+
+  	string postfx; 
+        switch(ud.day){
                 case 1:
                 case 21:
                 case 31: postfx = "st";
@@ -91,10 +95,10 @@ void prettyPrint(){
         }
 
 
-        int year = usrDate.year;
-        int day = usrDate.day;
+        int year = ud.year;
+        int day = ud.day;
 
-        switch(usrDate.month){
+        switch(ud.month){
                         case 1: cout << day << postfx << " January " << year << endl;
                                 break;
                         case 2: cout << day << postfx << " February " << year << endl;
@@ -128,13 +132,13 @@ void prettyPrint(){
 
 
 int main(){
-	Date usrDate{};
+	Date userDate{};
 	
-	usrDate = getDate();
+	userDate = getDate();
 	
-	cout << "year: " << usrDate.year << endl;
-	compareDate();
-	leap();	
+	compareDate(userDate);
+	leap(userDate);
+	prettyPrint(userDate);	
 	
 }
 
