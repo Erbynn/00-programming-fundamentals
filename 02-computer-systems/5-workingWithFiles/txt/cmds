@@ -1,0 +1,5 @@
+head -14 tobe.txt | tail -5 | grep '[,.-]$' | wc -l
+cat /etc/passwd | grep `id `whoami``
+head -5 tobe.txt | grep -c '^[A-Z]'
+head -5 tobe.txt | grep -c '^[A-Z]' head -12 tobe.txt | tail -1 | wc -w 
+head -12 tobe.txt | tail -1 | wc -w
