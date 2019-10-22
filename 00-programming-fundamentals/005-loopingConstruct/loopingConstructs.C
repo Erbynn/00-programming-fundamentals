@@ -14,7 +14,7 @@ int main(){
 	// excercise 1
 
 	Date d1{};
-	d1.year = 2019;
+	d1.year = 2020;
 	d1.month = 5;
 	d1.day = 6;
 
@@ -24,7 +24,7 @@ int main(){
 	d2.day = 6;
 
 	Date d3{};
-	d3.year = 2019;
+	d3.year = 2022;
 	d3.month = 5;
 	d3.day = 10;
 
@@ -84,7 +84,7 @@ int main(){
 
 	
  
-	// exercise 2---date comparison
+	// using conditionals 
 		
 	if( (d1.year > d2.year) && (d1.year > d3.year)){
 		cout << "Earliest: " << d1.day << "-" << d1.month << "-" << d1.year << endl;
@@ -128,6 +128,19 @@ int main(){
 				cout << d3.day << "-" << d3.month << "-" << d3.year << endl;
 			}
 		}
+	}
+
+	
+
+	// using loop
+	Date earliest = myVec[0];
+
+	for( int i = 0; i < 3; ++i){
+		if(earliest.year > myVec[i].year){
+     	        	earliest = myVec[i];
+	        }
+
+
 	}
 
 }
